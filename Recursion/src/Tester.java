@@ -15,7 +15,7 @@ public class Tester {
 	
 	public static int charCount(String s, char c) {
 		if(s.length() == 0) return 0;
-		return (s.charAt(0) == 'c' ? 1 : 0) + charCount(s.substring(1), c);
+		return (s.charAt(0) == c ? 1 : 0) + charCount(s.substring(1), c);
 	}
 	
 	public static boolean isSorted(int[] nums) {
